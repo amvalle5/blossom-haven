@@ -1,0 +1,152 @@
+body {
+background: #102930;
+color: #fff;
+}
+
+h1,h2{
+    font-family: "Playfair Display", serif;
+}
+
+nav, p{
+    font-family: "Poppins", sans-serif;
+}
+
+#skip{
+    position: absolute;
+    left: -100000px;    
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Header */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;   
+    border: .5px solid #c6b98c;
+    padding: 10px 25px;
+}
+
+nav a.logoText {
+    border: none;
+}
+
+header{
+    padding-bottom: 25px;
+}
+    
+/* Hero Banner */
+.bannerText{
+    display: none;
+}
+
+#hero-banner {
+    box-shadow: 5px 0 20px #c6b98c;  
+}
+
+#hero-banner img {
+    width: 95vw;     
+    height: auto;     
+    display: block;
+}
+
+.hero-text{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-text p{
+    font-size: 14px;
+}
+
+.showcase{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.showcase img{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.maker{
+    width:auto;
+    height: 220px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 5px 0 20px #c6b98c;
+}
+
+.maker p{
+    padding: 20px;
+}
+
+.btn{
+    padding: 15px;
+    background-color: #c6b98c;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn{
+    text-decoration: none;
+     color: #102930;
+     font-weight: bold;
+}
+
+.instagram{
+    margin-top: 40px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+#myBtn{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 5px 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: #c6b98c;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #c6b98c;
+    margin-top: 100px;
+}
+
+footer p{
+    font-size: 10px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a.footerlogo {
+    border: none;
+}
