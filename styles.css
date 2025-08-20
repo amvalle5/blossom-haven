@@ -1,13 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  min-width: 320px;
+}
+
 body {
-background: #102930;
-color: #fff;
+  font-size: 16px;
+  background: #102930;
+  color: #fff;
 }
 
 h1,h2{
     font-family: "Playfair Display", serif;
 }
 
-nav, p{
+nav, p, ol{
     font-family: "Poppins", sans-serif;
 }
 
@@ -20,26 +28,31 @@ nav, p{
     overflow: hidden;
 }
 
-/* Header */
 nav{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .logo {
     width: 10rem;
+    margin-bottom: 1rem;
 }
 
-ul{
+nav ul{
     list-style: none;
+    margin: 0;       
+    padding: 0;    
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 nav a{
     text-decoration: none;
-    color: #fff;   
+    color: #fff;
     border: .5px solid #c6b98c;
     padding: 10px 15px;
 }
@@ -51,8 +64,7 @@ nav a.logoText {
 header{
     padding-bottom: 25px;
 }
-    
-/* Hero Banner */
+
 .bannerText{
     display: none;
 }
@@ -62,9 +74,10 @@ header{
 }
 
 #hero-banner img {
-    width: 95vw;     
+    width: 100%;     
     height: auto;     
-    display: block;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-text{
@@ -80,80 +93,10 @@ header{
 .showcase{
     display: flex;
     justify-content: space-evenly;
-    gap: 15px;
+    gap: 5px;
 }
 
 .showcase img{
     width: 100%;
-    padding-bottom: 60px;
-}
-
-.maker{
-    width:auto;
-    height: 220px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 5px 0 20px #c6b98c;
-}
-
-.maker p{
-    padding: 20px;
-}
-
-.btn{
-    padding: 15px;
-    background-color: #c6b98c;
-    border: none;
-    border-radius: 8px;
-}
-
-.btn{
-    text-decoration: none;
-     color: #102930;
-     font-weight: bold;
-}
-
-.instagram{
-    margin-top: 60px;
-    background-color: #fff;
-    color: #000;
-}
-
-
-#myBtn{
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    padding: 5px 15px;
-    border-radius: 50%;
-    border: none;
-    background-color: #c6b98c;
-}
-
-footer {
-    border-top: 1px solid #c6b98c;
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end; 
-    padding: 10px 20px;
-}
-
-footer .footerlogo img {
-    display: block;
-
-}
-
-footer p {
-    font-size: 10px;
-    margin: 0;
-}
-
-footer a {
-    text-decoration: none;
-}
-
-footer a.footerlogo {
-    border: none;
+    padding: 2px;
 }
