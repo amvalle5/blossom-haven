@@ -6,12 +6,12 @@ html, body {
 }
 
 body {
-  font-size: 16px;
+  font-size: 12px;
   background: #102930;
   color: #fff;
 }
 
-h1,h2{
+h1, h2{
     font-family: "Playfair Display", serif;
 }
 
@@ -45,16 +45,16 @@ nav ul{
     margin: 0;       
     padding: 0;    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 nav a{
     text-decoration: none;
     color: #fff;
     border: .5px solid #c6b98c;
-    padding: 10px 15px;
+    padding: 5px 10px;
 }
 
 nav a.logoText {
@@ -62,7 +62,7 @@ nav a.logoText {
 }
 
 header{
-    padding-bottom: 25px;
+    padding-bottom: 45px;
 }
 
 .bannerText{
@@ -83,11 +83,7 @@ header{
 .hero-text{
     text-align: center;
     margin: 0 auto;
-    padding: 50px 30px;
-}
-
-.hero-text p{
-    font-size: 14px;
+    padding: 10px 30px;
 }
 
 .showcase{
@@ -98,5 +94,71 @@ header{
 
 .showcase img{
     width: 100%;
-    padding: 2px;
+    padding-left: 2px; /* FIX THIS */
+    padding-right: 2px;
+    padding-bottom: 50px;
+}
+
+/* MAKER SECTION */
+.maker {
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 0 20px #c6b98c;
+    padding-top: 25px;
+}
+
+.maker p{
+    padding: 5px;
+}
+
+.btn{
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: #c6b98c;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #102930;
+    font-weight: bold;
+}
+
+.instagram{
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+ #myBtn{
+    display: none;
+   /* display: block;
+   position: fixed;
+    bottom: 10px;
+    left: 420px;
+    padding: 5px 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: #c6b98c;  */
+}
+
+footer{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.igicon{
+    display: none;
 }
