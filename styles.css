@@ -171,10 +171,6 @@ footer{
         font-size: 16px;
     }
 
-    .logo{
-        width: 12rem;
-    }
-
     nav ul{
         gap: 50px;
     }
@@ -195,4 +191,43 @@ footer{
     .instagram{
         width: 600px;
     }
+}
+
+@media (min-width: 1024px) {
+  nav{
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+nav ul{
+    gap: 10px;
+}
+
+.maker{
+    width: calc(100% - 20px);
+}
+
+.instagram{
+    width: 900px;    
+}
+
+footer{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end; 
+    padding: 10px 20px;
+
+}
+footer .footerlogo img {
+    display: block;
+}
+
+footer p {
+    font-size: 10px;
+    margin: 0;
+}
+
+
+
+
 }
