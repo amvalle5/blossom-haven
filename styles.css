@@ -1,3 +1,6 @@
+/*CSS by Araceli */
+
+/* Global Styles */
 html, body {
   margin: 0;
   padding: 0;
@@ -28,6 +31,7 @@ nav, p, ol{
     overflow: hidden;
 }
 
+/* Nav Styles */
 nav{
     display: flex;
     flex-direction: column;
@@ -99,6 +103,63 @@ header{
     padding-bottom: 50px;
 }
 
+.shopShowcase{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.shopShowcase img{
+    width: 90%;
+    align-items: center;
+}
+
+.prices{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.prices h2{
+    text-align: center;
+}
+
+.pricelist ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.pricelist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 170px;
+    border-radius: 5px;
+    box-shadow: 5px 0 20px #c6b98c;
+}
+
+.pricelist li{
+    padding: 8px 0;
+}
+
+.addlist{
+    width: 170px;
+    border-radius: 5px;
+    box-shadow: 5px 0 20px #c6b98c;
+}
+
+.addlist ol{
+    list-style: none;
+    margin: 0 auto;
+}
+
+.addlist li{
+    padding: 8px 0;
+}
+
 /* MAKER SECTION */
 .maker {
     width: 350px;
@@ -151,6 +212,17 @@ header{
     background-color: #c6b98c;  */
 }
 
+/* ORDER POLICY SECTION */
+.order-policy{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 0 20px #c6b98c;
+    border-radius: 8px;
+}
+
+
 footer{
     padding-top: 30px;
     display: flex;
@@ -194,40 +266,47 @@ footer{
 }
 
 @media (min-width: 1024px) {
-  nav{
-    flex-direction: row;
-    justify-content: space-between;  
+    nav{
+        flex-direction: row;
+        justify-content: space-between;  
 }
 
-nav ul{
-    gap: 10px;
+    nav ul{
+        gap: 10px;
 }
 
-.maker{
-    width: calc(100% - 20px);
+    .hero-text{
+        padding: 40px 20px;
+    }
+
+    .showcase{
+        padding: 30px 0;
+    }
+
+    .maker{
+        width: calc(100% - 20px);
 }
 
-.instagram{
-    width: 900px;    
+    .instagram{
+        width: 900px;    
 }
 
-footer{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end; 
-    padding: 10px 20px;
-
-}
-footer .footerlogo img {
-    display: block;
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end; 
+        padding: 10px 20px;
+        justify-content: space-between;
 }
 
-footer p {
-    font-size: 10px;
-    margin: 0;
+    footer .footerlogo img {
+        display: block;
 }
 
-
-
+    footer p {
+        font-size: 10px;
+        margin: 0 auto;
+        text-align: center;
+}
 
 }
