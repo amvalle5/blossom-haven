@@ -83,37 +83,52 @@
             <h2>Order Form</h2>
             <form>
                 <p>Customer Information</p>
+                <div class="row">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" class="input-field">
+                </div>
 
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName">
+                <div class="row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="input-field">
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-
-                <label for="phone">Phone:</label>
-                <input type="number" id="phone" name="phone">
+                <div class="row">
+                    <label for="phone">Phone:</label>
+                    <input type="number" id="phone" name="phone" class="input-field">
+                </div>
 
                 <p>Bouquet Details</p>
 
-                <label for="quantity">Quantity of Roses: </label>
-                <input type="number" id="quantity" name="quantity">
+                <div class="row">
+                    <label for="quantity">Quantity of Roses: </label>
+                    <input type="number" id="quantity" name="quantity" class="input-field">
+                </div>
 
-                <label for="color">Color of Roses:</label>
-                <input type="text" id="color" name="color">
+                <div class="row">
+                    <label for="color">Color of Roses:</label>
+                    <input type="text" id="color" name="color" class="input-field">
+                </div>
 
-                <label for="date">Date Needed By:</label>
-                <input type="date" id="date" name="date">
+                <div class="row">
+                    <label for="date">Date Needed By:</label>
+                    <input type="date" id="date" name="date" class="input-field">
+                </div>
 
-                <label for="addons">Add Ons:</label>
-                <select id="addons" name="addons">
-                    <option value="crowns">Crowns</option>
-                    <option value="personalized">Personalized Messages</option>
-                    <option value="plushies">Plushies</option>
-                    <option value="chocolates">Chocolates</option>
-                </select>
+                <div class="row">
+                    <label for="addons">Add Ons:</label>
+                        <select id="addons" name="addons" class="input-field">
+                            <option value="none">None</option>
+                            <option value="crowns">Crowns</option>
+                            <option value="personalized">Personalized Messages</option>
+                            <option value="plushies">Plushies</option>
+                            <option value="chocolates">Chocolates</option>
+                        </select>
+                </div>   
+
                 <p><strong>Reminder:</strong> A 50% deposit via Zelle is required to secure your order. Orders are not confirmed until the deposit is received.</p>
                 
-                <input type="button" value="Submit">
+                <input type="button" value="Submit" class="submit">
             </form>
         </section>
     </main>

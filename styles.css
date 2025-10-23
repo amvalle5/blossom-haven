@@ -111,7 +111,6 @@ header{
 
 .shopShowcase img{
     width: 90%;
-    align-items: center;
 }
 
 .prices{
@@ -126,39 +125,26 @@ header{
 
 .pricelist ol {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
 }
 
-.pricelist{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+.pricelist,
+.addlist {
     width: 170px;
     border-radius: 5px;
-    box-shadow: 5px 0 20px #c6b98c;
+    box-shadow: 0 4px 20px #c6b98c;
 }
 
-.pricelist li{
+.pricelist li,
+.addlist li {
     padding: 8px 0;
-}
-
-.addlist{
-    width: 170px;
-    border-radius: 5px;
-    box-shadow: 5px 0 20px #c6b98c;
 }
 
 .addlist ol{
     list-style: none;
     margin: 0 auto;
+    align-content: baseline;
 }
 
-.addlist li{
-    padding: 8px 0;
-}
 
 /* MAKER SECTION */
 .maker {
@@ -217,11 +203,56 @@ header{
     width: 400px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    box-shadow: 5px 0 20px #c6b98c;
+    justify-content: center;
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 0 4px 20px #c6b98c;
     border-radius: 8px;
 }
 
+.order-policy h2{
+    text-align: center;
+}
+
+.order-form{
+    width: 400px;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px #c6b98c;
+}
+
+.order-form h2{
+    text-align: center;
+}
+
+.order-form form{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+/* .order-form label, .order-form input{
+    padding-top: 5px;
+} */
+
+.row{
+    display: flex;
+    justify-content: end;
+}
+
+.input-field{
+    margin-left: .9em;
+    padding: .1em;
+    margin-bottom: .5em;
+    padding-left: 10em;
+}
+
+.submit{
+    background-color: #c6b98c;
+    border-radius: 8px;
+    width: 100px;
+}
 
 footer{
     padding-top: 30px;
@@ -263,6 +294,34 @@ footer{
     .instagram{
         width: 600px;
     }
+
+    .prices{
+    padding-bottom: 50px;
+}
+
+    .pricelist{
+        align-items: center;
+    }
+
+    .pricelist,
+    .addlist{
+        width: 280px;
+    }
+
+    .order-policy, .order-form{
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .order-form{
+        margin-top: 40px;
+    }
+
+    .order-form form{
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -291,7 +350,33 @@ footer{
         width: 900px;    
 }
 
+    .order-policy{
+        width: 950px;
+    }
+
+    .order-form{
+        width: 950px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input-field {
+        width: 550px;
+        margin-left: .5em;
+        padding: .5em;
+        margin-bottom: .5em;
+        padding-left: 19em;
+    }
+
+    #addons {
+        width: 815px;
+    }
+
     footer{
+        margin-top: 100px;
         display: flex;
         flex-direction: row;
         align-items: flex-end; 
