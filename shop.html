@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!--Custom Styles-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- JavaScript -->
+     <script src="script.js" defer></script>
     <!-- Google Font Links-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +23,15 @@
     <header>
         <nav>
             <a href="index.html" class="logoText">
-                <img class="logo" src="images/logo2.png" alt="">
+                <img class="logo" src="images/logo2.png" alt="Blossom Haven Logo">
             </a>
-            <ul>
+
+            <!-- Hamburger button for mobile-->
+             <button class="hamburger" aria-label="Toggle menu">
+                &#9776;
+             </button>
+
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
@@ -32,7 +40,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="content-wrapper">
          <section>
             <h2 class="bannerText">Blossom Haven Banner</h2>
             <div id="hero-banner">
@@ -41,30 +49,30 @@
         </section>
         <section class="shopShowcase">
             <div>
-                <img src="images/pinkroses.png" alt="" >
+                <img src="images/pinkroses.png" alt="Pink rose arrangement" >
             </div>
             <div>
-                <img src="images/purpleroses.png" alt="" >
+                <img src="images/purpleroses.png" alt="purple rose arrangement" >
             </div>
         </section>
         <section class="prices">
             <div class="pricelist">
                 <h2>Prices</h2>
                 <ol>
-                    <li>12 Roses $35</li>
-                    <li>24 Roses $70</li>
-                    <li>36 Roses $100</li>
-                    <li>48 Roses $135</li>
-                    <li>60 Roses $155</li>
+                    <li><span>12 Roses</span> <strong>$35</strong></li>
+                    <li><span>24 Roses</span> <strong>$70</strong></li>
+                    <li><span>36 Roses</span> <strong>$100</strong></li>
+                    <li><span>48 Roses</span> <strong>$135</strong></li>
+                    <li><span>60 Roses</span> <strong>$155</strong></li>
                 </ol>
             </div>
             <div class="addlist">
                 <h2>Add Ons</h2>
                 <ol>
-                    <li>Crowns $5</li>
-                    <li>Personalized Messages $5</li>
-                    <li>Plushies $5-$10</li>
-                    <li>Chocolates $1.50 each</li>
+                    <li><span>Crowns</span> <strong>$5</strong></li>
+                    <li><span>Personalized Messages</span> <strong>$5</strong></li>
+                    <li><span>Plushies</span> <strong>$5-$10</strong></li>
+                    <li><span>Chocolates</span> <strong>$1.50 each</strong></li>
                 </ol>
             </div>
         </section>

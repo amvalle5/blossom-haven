@@ -36,34 +36,58 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    justify-content: flex-start;
+    padding: 15px 0;
 }
 
 .logo {
-    width: 10rem;
+    width: 8rem;
     margin-bottom: 1rem;
 }
 
 nav ul{
+    display: none;
+    flex-direction: column; 
+    align-items: center;  
     list-style: none;
-    margin: 0;       
-    padding: 0;    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-nav a{
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    border: 0.5px solid #c6b98c;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.hamburger{
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding-bottom: 10px;
+
+}
+
+.nav-links.active{
+    display: flex;
+}
+
+/* nav a{
     text-decoration: none;
     color: #fff;
     border: .5px solid #c6b98c;
     padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav a.logoText {
     border: none;
-}
+} */
 
 header{
     padding-bottom: 45px;
@@ -74,20 +98,31 @@ header{
 }
 
 #hero-banner {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     box-shadow: 5px 0 20px #c6b98c;  
 }
 
 #hero-banner img {
     width: 100%;     
     height: auto;     
-    background-size: cover;
-    background-position: center;
+    display: block;
 }
 
 .hero-text{
     text-align: center;
     margin: 0 auto;
     padding: 10px 30px;
+}
+
+.content-wrapper{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 .showcase{
@@ -103,19 +138,32 @@ header{
     padding-bottom: 50px;
 }
 
+.prices, .shopShowcase{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 .shopShowcase{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding: 30px;
 }
 
 .shopShowcase img{
     width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(198, 185, 140, 0.5); /* matches your other sections */
 }
 
 .prices{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
     padding-bottom: 20px;
 }
 
@@ -123,27 +171,30 @@ header{
     text-align: center;
 }
 
-.pricelist ol {
+.pricelist ol, .addlist ol {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .pricelist,
 .addlist {
-    width: 170px;
+    width: 90%;
+    max-width: 300px;
     border-radius: 5px;
     box-shadow: 0 4px 20px #c6b98c;
+    padding: 15px;
+    text-align: left;
 }
 
 .pricelist li,
 .addlist li {
-    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
 }
 
-.addlist ol{
-    list-style: none;
-    margin: 0 auto;
-    align-content: baseline;
-}
 
 
 /* MAKER SECTION */
@@ -200,11 +251,11 @@ header{
 
 /* ORDER POLICY SECTION */
 .order-policy{
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 50px;
     padding: 20px;
     box-shadow: 0 4px 20px #c6b98c;
     border-radius: 8px;
@@ -215,21 +266,24 @@ header{
 }
 
 .order-form{
-    width: 400px;
-    margin: 50px;
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 20px #c6b98c;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .order-form h2{
     text-align: center;
 }
 
-.order-form form{
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
+.order-form p{
+    margin: 10px 0;
+    font-weight: 500;
 }
 
 /* .order-form label, .order-form input{
@@ -238,20 +292,43 @@ header{
 
 .row{
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.row label{
+    margin-bottom: 5px;
+    font-weight: 500;
 }
 
 .input-field{
-    margin-left: .9em;
-    padding: .1em;
-    margin-bottom: .5em;
-    padding-left: 10em;
+    padding: 5px 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-field:focus{
+    outline: none;
+    border-color: #c6b98c;
+    box-shadow: 0 0 5px rgba(198, 185, 140, 0.5);
 }
 
 .submit{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
     background-color: #c6b98c;
-    border-radius: 8px;
-    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+  background-color: #b0a071; 
 }
 
 footer{
