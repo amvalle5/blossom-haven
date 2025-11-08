@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!--Custom Styles-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- JavaScript -->
+     <script src="script.js" defer></script>
     <!-- Google Font Links-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +23,15 @@
     <header>
         <nav>
             <a href="index.html" class="logoText">
-                <img class="logo" src="images/logo2.png" alt="">
+                <img class="logo" src="images/logo2.png" alt="Blossom Haven Logo">
             </a>
-            <ul>
+
+            <!-- Hamburger button for mobile-->
+             <button class="hamburger" aria-label="Toggle menu">
+                &#9776;
+             </button>
+
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>

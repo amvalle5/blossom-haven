@@ -6,6 +6,7 @@ html, body {
   padding: 0;
   width: 100%; 
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 body {
@@ -67,10 +68,9 @@ nav ul{
     font-size: 1.5rem;
     background: none;
     border: none;
-    color: #fff;
+    color: #c6b98c;
     cursor: pointer;
-    padding-bottom: 10px;
-
+    padding-bottom: 15px;
 }
 
 .nav-links.active{
@@ -90,7 +90,7 @@ nav a.logoText {
 } */
 
 header{
-    padding-bottom: 45px;
+    padding-bottom: 20px;
 }
 
 .bannerText{
@@ -113,6 +113,8 @@ header{
     text-align: center;
     margin: 0 auto;
     padding: 10px 30px;
+    min-width: 300px;
+    max-width: 500px;
 }
 
 .content-wrapper{
@@ -127,16 +129,18 @@ header{
 
 .showcase{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     gap: 5px;
+    padding-bottom: 20px;
 }
 
 .showcase img{
     width: 100%;
-    padding-left: 2px; /* FIX THIS */
-    padding-right: 2px;
-    padding-bottom: 50px;
+    max-width: 300px;
 }
+
 
 .prices, .shopShowcase{
     width: 100%;
@@ -206,7 +210,7 @@ header{
     flex-direction: column;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 5px 0 20px #c6b98c;
+    box-shadow: 0 0 20px #c6b98c;
     padding-top: 25px;
 }
 
@@ -352,6 +356,8 @@ footer{
     }
 
     nav ul{
+        display: flex;
+        flex-direction: row;
         gap: 50px;
     }
 
@@ -363,6 +369,13 @@ footer{
         padding: 15px 4px;
     }
 
+    #hero-banner img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; 
+    }
+
     .maker{
         width: 600px;
         height: 250px;
@@ -372,9 +385,28 @@ footer{
         width: 600px;
     }
 
+    .showcase{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .showcase img{
+        width: 100%;
+    }
+
+     .shopShowcase{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .prices{
-    padding-bottom: 50px;
-}
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
     .pricelist{
         align-items: center;
@@ -382,11 +414,11 @@ footer{
 
     .pricelist,
     .addlist{
-        width: 280px;
+        height: 300px;
     }
 
     .order-policy, .order-form{
-        width: 600px;
+        max-width: 700px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -399,9 +431,22 @@ footer{
     .order-form form{
         font-size: 16px;
     }
+
+    .hamburger{
+        display: none;
+    }
+
+    .content-wrapper{
+        display: flex;
+        gap: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
+    body{
+        background-color: red;
+    }
+
     nav{
         flex-direction: row;
         justify-content: space-between;  
