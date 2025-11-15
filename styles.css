@@ -166,7 +166,7 @@ header{
 .prices{
     display: flex;
     flex-direction: column;
-  justify-content: center;
+    align-items: center;
     gap: 50px;
     padding-bottom: 20px;
 }
@@ -198,7 +198,6 @@ header{
     padding: 6px 0;
     border-bottom: 1px solid #eee;
 }
-
 
 
 /* MAKER SECTION */
@@ -335,6 +334,41 @@ header{
   background-color: #b0a071; 
 }
 
+ .bio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.bio h2{
+    display: none;
+}   
+
+.bio img{
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    padding-top: 30px;
+}
+
+.bio p{
+    max-width: 250px;
+    text-align: center;
+}
+
+.questions{
+    width: 100%;
+    max-width: 350px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 20px #c6b98c;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
 footer{
     padding-top: 30px;
     display: flex;
@@ -418,7 +452,8 @@ footer{
     }
 
     .pricelist{
-        align-items: center;
+        justify-content: center;
+        
     }
 
     .pricelist,
