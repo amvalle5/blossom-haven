@@ -368,6 +368,25 @@ header{
     text-align: center;
 }
 
+.gallery{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.gallery img{
+    box-shadow: 0 0 20px #c6b98c;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.gallery p{
+    width: 250px;
+    text-align: center;
+}
 
 footer{
     padding-top: 30px;
@@ -438,7 +457,7 @@ footer{
      .shopShowcase{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .shopShowcase img{
@@ -449,6 +468,7 @@ footer{
         padding-bottom: 50px;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .pricelist{
@@ -484,6 +504,19 @@ footer{
     .content-wrapper{
         display: flex;
         gap: 20px;
+    }
+
+    .bio img{
+        max-width: 300px;
+    }
+
+    .bio p{
+        max-width: 299px;
+        font-size: 14px;
+    }
+
+    .questions{
+        max-width: 500px;
     }
 }
 
@@ -529,6 +562,11 @@ footer{
         width: 400px;
     }
 
+    .prices{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     .order-policy{
         width: 950px;
     }
@@ -555,22 +593,30 @@ footer{
     }
 
     footer{
-        margin-top: 100px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end; 
-        padding: 10px 20px;
-        justify-content: space-between;
+    margin-top: 100px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-    footer .footerlogo img {
-        display: block;
-}
 
     footer p {
-        font-size: 10px;
-        margin: 0 auto;
-        text-align: center;
+    font-size: 10px;
+    
 }
+
+.bio img{
+        max-width: 500px;
+    }
+
+    .bio p{
+        max-width: 850px;
+        font-size: 16px;
+    }
+
+    .questions{
+        max-width: 800px;
+    }
 
 }
