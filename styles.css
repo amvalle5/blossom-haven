@@ -268,7 +268,7 @@ header{
     text-align: center;
 }
 
-.order-form{
+.order-form, .contact-form{
     width: 90%;
     max-width: 400px;
     margin: 40px auto;
@@ -280,7 +280,7 @@ header{
     gap: 15px;
 }
 
-.order-form h2{
+.order-form h2, .contact-form h2{
     text-align: center;
 }
 
@@ -373,19 +373,26 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .gallery img{
     box-shadow: 0 0 20px #c6b98c;
     border-radius: 8px;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .gallery p{
     width: 250px;
     text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#contact{
+    text-align: center;
+    padding-top: 20px;
 }
 
 footer{
@@ -407,6 +414,11 @@ footer{
     body {
         font-size: 16px;
     }
+
+    .logo {
+        width: 10rem;
+    }
+
 
     nav ul{
         display: flex;
@@ -472,8 +484,7 @@ footer{
     }
 
     .pricelist{
-        justify-content: center;
-        
+        justify-content: center; 
     }
 
     .pricelist,
@@ -518,9 +529,22 @@ footer{
     .questions{
         max-width: 500px;
     }
+
+    .gallery img{
+        max-width: 300px;
+    }
+
+    .gallery p{
+        max-width: 299px;
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 1024px) {
+    .logo {
+        width: 11.5rem;
+    }
+
     nav{
         flex-direction: row;
         justify-content: space-between;  
@@ -528,7 +552,15 @@ footer{
 
     nav ul{
         gap: 10px;
-}
+    }
+
+    #hero-banner img {   
+        width: 100%;
+        height: auto;          
+        max-height: 145px;     
+        object-fit: cover;     
+        display: block;   
+    }
 
     .hero-text{
         padding: 20px 10px;
@@ -600,13 +632,11 @@ footer{
     justify-content: space-between;
 }
 
-
     footer p {
     font-size: 10px;
-    
 }
 
-.bio img{
+    .bio img{
         max-width: 500px;
     }
 
@@ -619,4 +649,21 @@ footer{
         max-width: 800px;
     }
 
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px 15px;
+    }
+
+    .gallery img{
+        max-width: 400px;
+    }
+
+    #redroses{
+        width: 300px;
+    }
+
+    .contact-form{
+        width: 1050px;
+    }
 }
